@@ -1,0 +1,14 @@
+<wpml-config>
+	<admin-texts>
+		<key name="attesa_theme_options">
+			<key name="_copyright_text"/>
+			<key name="_woocommerce_stickybar_text"/>
+			<key name="_email_address"/>
+			<key name="_phone_number"/>
+			<key name="_custom_field"/>
+			<key name="_read_more_text"/>
+			<key name="_menu_mobile_text_close"/>
+			<key name="_menu_mobile_default_text"/>
+		</key>
+	</admin-texts>
+</wpml-config>

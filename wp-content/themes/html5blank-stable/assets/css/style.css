@@ -1,0 +1,249 @@
+/*darkmode/light mode*/
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+:root{
+    --primary-color:#000000;
+    --text-color:#fff;
+    --nav-color:#2d2f33;
+    --button-color:#fff;
+    --button-text:black;
+    --h2-color:#fff;
+    --post-color:#2d2f33;
+    
+}
+
+
+input[type="checkbox"]:checked + .wrapper {
+    --primary-color:#fff;
+    --text-color:#000000;
+    --nav-color:#ededed;
+    --button-color:#000000;
+    --button-text:#fff;
+    --h2-color:#000000;
+    --post-color:#ededed;
+    transition:background-color 500ms linear;
+}
+input[id="check"]:checked + .wrapper .switch:after{
+    display:none;
+}
+input[id="check"]:checked + .wrapper .switch:before{
+    display:block;
+}
+#check{
+    display:none;
+}
+.switch{
+    position:relative;
+    background-color:var(--button-color);
+    color:var(--button-text);
+    padding:7px;
+    margin-left:5px;
+    border-radius:3px;
+    content: "\f0eb";
+    font:normal normal normal 10px/1 FontAwesome;
+}
+.switch:after{
+    content: "Lights ON\f0eb";
+    font:normal normal normal 10px/1 FontAwesome;
+    margin-left:5px;
+    
+}
+.switch:before{
+    background-color:var(--button-color);
+    color:var(--button-text);
+    content: "Lights OFF\f0eb";
+    font:normal normal normal 10px/1 FontAwesome;
+    position:absolute;
+    padding:7px;
+    border-radius:3px;
+    width:70px;
+    height:25px;
+    top:0;
+    left:0;
+    display:none;
+}
+
+
+
+
+
+
+
+
+*{
+	box-sizing: border-box;
+}
+
+/*page*/
+
+.wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:100%;
+    min-height:100vh;
+    height:100%;
+    width:100%;
+    align-content:flex-start;
+   background-color:var(--primary-color);
+   color:var(--text-color);
+}
+body,
+body.elementor-page-1:not(.elementor-motion-effects-element-type-background), body.elementor-page-1 > .elementor-motion-effects-container > .elementor-motion-effects-layer{
+    background-color:#000000;
+    color:white;
+    font-family: 'Nunito', sans-serif;;
+}
+/*header*/
+
+.logo{
+    display:flex;
+    justify-content:center;
+
+}
+.logo img{
+    height:60px;
+}
+.header{
+    width:100%;
+}
+
+/*navbar*/
+.nav ul {
+    display:flex;
+    justify-content:center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:var(--nav-color);
+  color:var(--text-color);
+}
+
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/*content*/
+
+main{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    width:65%;
+    margin-left:30px;
+}
+.sidebar{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    width:30%;
+    margin-left:30px;
+    margin-top:20px;
+}
+section{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+section h1{
+    width:100%;
+    text-align:center;
+}
+
+.post img{
+    position:absolute;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    top:5px;
+    left:5px;
+    filter:brightness(50%);
+}
+.post{
+    position:relative;
+    width:50%;
+    padding:30px;
+    border-radius:10px;
+    margin:10px;
+    background-color:var(--post-color);
+}
+/*article*/
+
+.post h2{
+    position:relative;
+    text-align:center;
+    
+}
+.post h2 a{
+    text-decoration:none;
+    color:var(--h2-color);
+}
+.post p{
+    position:relative;
+}
+.post p a{
+    text-decoration:none;
+    color:white;
+    color:var(--text-color);
+}
+.post span a{
+    text-decoration:none;
+    color:white;
+    color:var(--text-color);
+}
+.date{
+    position:relative;
+}
+.author{
+    position:relative;
+    left:60px;
+}
+
+.comments{
+    display:none;
+    position:relative;
+}
+.view-article{
+    position:absolute;
+    bottom:-25px;
+}
+/*footer*/
+
+.footer{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    padding:20px;
+    margin:30px;
+}
+
+/*wordpress1*/
+
+body.single .post{
+    width:100%
+}
+
+/*wordpress2*/
+
+body, body.elementor-page-1:not(.elementor-motion-effects-element-type-background), body.elementor-page-1 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    color:white;
+    background:#000000;
+}
+
+
+
+
+
+
+
+

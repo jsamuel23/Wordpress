@@ -1,0 +1,106 @@
+#toplevel_page_zita-license .wp-menu-image img {
+     padding: 0 0 0 0; 
+    opacity: .6;
+    filter: alpha(opacity=60);
+    background: #ffffff;
+    margin-top: 6px;
+    }
+  #toplevel_page_zita-license .wp-menu-image.dashicons-before{
+  	    opacity: 04;
+
+  }
+.button.button-hero.hide-if-no-customize.zita-demo-import.installing:before{
+	margin-top: 13px;
+}
+.button.button-hero.hide-if-no-customize.go-pro.button-primary i{
+	margin-top: 10px;
+}
+.zita-key-validation{
+	font-size: 21px;
+	margin: 135px auto 30px auto;
+	text-transform: uppercase;
+	text-align: center;
+}
+.zita-sites-menu-page-wrapper>form{
+	text-align: center;
+}
+.zita-sites-menu-page-wrapper>form>label{
+	font-size: 21px;
+}
+.zita-sites-menu-page-wrapper form input[type="text"]{
+	border: 0;
+	height: 46px;
+	width: 400px;
+	font-size: 20px;
+	margin: 0 10px;
+	padding: 10px;
+}
+.zita-sites-menu-page-wrapper form input[type="submit"]{
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	background: #2ab7eff0;
+	color: #fff;
+	font-size: 17px;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+	padding: 12px 32px;
+	margin: 0;
+	margin-top: 30px;
+	text-transform: uppercase;
+}
+.zita-sites-menu-page-wrapper form input:focus{
+	outline: none;
+}
+.demo_paid:after,
+.demo_upgrade:after
+{
+	position: absolute;
+    content: 'Pro';
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    color: #fff;
+    background: #d81e00;
+   	padding: 15px;
+   	border-radius: 50%;
+   	width: 30px;
+    height: 30px;
+    line-height: 26px;
+    margin-right: -15px;
+    margin-top: -15px;
+}
+.demo_upgrade:after{
+	background: #5ca65c;
+}
+.zita-key-success{
+	background: #fff;
+	padding: 100px 0;
+	text-align: center;
+	max-width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 5px #d0d0d0;
+}
+.zita-key-success>p{
+	color: #03d0a2;
+	font-size: 30px;
+	text-align: center;
+	margin: 50px auto;
+}
+.zita-key-success>a{
+	display: inline-block;
+    background: #56c19f;
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+.zita-key-success>a:focus{
+	color: unset;
+	box-shadow: unset;
+}
